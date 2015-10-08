@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery custom select Pluggin</title>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <link rel="stylesheet" href="css/jquery.ak.select.css" />
+        <script src="js/jquery.ak.select.js"></script>
+        <script type="text/javascript">
+        $(function(){
+            $('#miSelect').akselect();
+            $('.selects-varios').akselect();
+            $('#SelectCustom').akselect({
+                placeholder: 'Seleccione una Marca de Auto'
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <select id="miSelect">
+            <option value="">Seleccione un Modelo</option>
+            <option value="1">AC</option>
+            <option value="2">ALFA ROMEO</option>
+            <option value="5">AUDI</option>
+            <option value="8">BMW</option>
+            <option value="12">CHANA</option>
+            <option value="14">CHERY</option>
+            <option value="13">CHEVROLET</option>
+            <option value="15">CHRYSLER</option>
+            <option value="17">CITROEN</option>
+            <option value="20">DAIHATSU</option>
+            <option value="22">DODGE</option>
+            <option value="147">FAW</option>
+            <option value="26">FIAT</option>
+            <option value="29">FORD</option>
+            <option value="27">FOTON</option>
+            <option value="32">GEELY</option>
+            <option value="33">GWM</option>
+            <option value="36">HONDA</option>
+            <option value="37">HYUNDAI</option>
+            <option value="39">ISUZU</option>
+            <option value="40">JAGUAR</option>
+            <option value="41">JEEP</option>
+            <option value="43">KIA</option>
+            <option value="47">LAND ROVER </option>
+            <option value="50">LEXUS</option>
+            <option value="55">MAZDA</option>
+            <option value="56">MERCEDES-BENZ</option>
+            <option value="58">MG</option>
+            <option value="60">MINI</option>
+            <option value="59">MITSUBISHI</option>
+            <option value="63">NISSAN</option>
+            <option value="65">OPEL</option>
+            <option value="66">PEUGEOT</option>
+            <option value="70">PROTON</option>
+            <option value="72">RANGE ROVER</option>
+            <option value="73">RENAULT</option>
+            <option value="80">SSANGYONG</option>
+            <option value="83">SUZUKI</option>
+            <option value="84">TATA</option>
+            <option value="85">TOYOTA</option>
+            <option value="88">VOLKSWAGEN</option>
+            <option value="89">VOLVO</option>
+            <option value="90">ZOTYE</option>
+        </select> 
+        <div>&nbsp;</div>
+        <select class="selects-varios">
+            <option value="">Seleccione un Modelo</option>
+            <option value="1">AC</option>
+            <option value="2">ALFA ROMEO</option>
+            <option value="5" selected>AUDI</option>
+            <option value="8">BMW</option>
+            <option value="12">CHANA</option>
+            <option value="14">CHERY</option>
+            <option value="13">CHEVROLET</option>
+            <option value="15">CHRYSLER</option>
+            <option value="17">CITROEN</option>
+            <option value="20">DAIHATSU</option>
+            <option value="22">DODGE</option>
+            <option value="147">FAW</option>
+            <option value="26">FIAT</option>
+            <option value="29">FORD</option>
+            <option value="27">FOTON</option>
+            <option value="32">GEELY</option>
+            <option value="33">GWM</option>
+            <option value="36">HONDA</option>
+            <option value="37">HYUNDAI</option>
+            <option value="39">ISUZU</option>
+            <option value="40">JAGUAR</option>
+            <option value="41">JEEP</option>
+            <option value="43">KIA</option>
+            <option value="47">LAND ROVER </option>
+            <option value="50">LEXUS</option>
+            <option value="55">MAZDA</option>
+            <option value="56">MERCEDES-BENZ</option>
+            <option value="58">MG</option>
+            <option value="60">MINI</option>
+            <option value="59">MITSUBISHI</option>
+            <option value="63">NISSAN</option>
+            <option value="65">OPEL</option>
+            <option value="66">PEUGEOT</option>
+            <option value="70">PROTON</option>
+            <option value="72">RANGE ROVER</option>
+            <option value="73">RENAULT</option>
+            <option value="80">SSANGYONG</option>
+            <option value="83">SUZUKI</option>
+            <option value="84">TATA</option>
+            <option value="85">TOYOTA</option>
+            <option value="88">VOLKSWAGEN</option>
+            <option value="89">VOLVO</option>
+            <option value="90">ZOTYE</option>
+        </select>
+        <div>&nbsp;</div>
+        <select class="selects-varios" onchange="alert('select con onchange: '+this.value );">
+            <option value="">Seleccione un Modelo</option>
+            <option value="1">AC</option>
+            <option value="2">ALFA ROMEO</option>
+            <option value="5">AUDI</option>
+            <option value="8">BMW</option>
+            <option value="12">CHANA</option>
+            <option value="14">CHERY</option>
+            <option value="13">CHEVROLET</option>
+            <option value="15">CHRYSLER</option>
+            <option value="17">CITROEN</option>
+            <option value="20">DAIHATSU</option>
+            <option value="22">DODGE</option>
+            <option value="147">FAW</option>
+            <option value="26">FIAT</option>
+            <option value="29">FORD</option>
+            <option value="27">FOTON</option>
+            <option value="32">GEELY</option>
+            <option value="33">GWM</option>
+            <option value="36">HONDA</option>
+            <option value="37">HYUNDAI</option>
+            <option value="39">ISUZU</option>
+            <option value="40">JAGUAR</option>
+            <option value="41">JEEP</option>
+            <option value="43">KIA</option>
+            <option value="47">LAND ROVER </option>
+            <option value="50">LEXUS</option>
+            <option value="55">MAZDA</option>
+            <option value="56">MERCEDES-BENZ</option>
+            <option value="58">MG</option>
+            <option value="60">MINI</option>
+            <option value="59">MITSUBISHI</option>
+            <option value="63">NISSAN</option>
+            <option value="65">OPEL</option>
+            <option value="66">PEUGEOT</option>
+            <option value="70">PROTON</option>
+            <option value="72">RANGE ROVER</option>
+            <option value="73">RENAULT</option>
+            <option value="80">SSANGYONG</option>
+            <option value="83">SUZUKI</option>
+            <option value="84">TATA</option>
+            <option value="85">TOYOTA</option>
+            <option value="88">VOLKSWAGEN</option>
+            <option value="89">VOLVO</option>
+            <option value="90">ZOTYE</option>
+        </select>
+        <div>&nbsp;</div>
+        <select id="SelectCustom">
+            <option value="">Seleccione un Modelo</option>
+            <option value="1">AC</option>
+            <option value="2">ALFA ROMEO</option>
+            <option value="5">AUDI</option>
+            <option value="8">BMW</option>
+            <option value="12">CHANA</option>
+            <option value="14">CHERY</option>
+            <option value="13">CHEVROLET</option>
+            <option value="15">CHRYSLER</option>
+            <option value="17">CITROEN</option>
+            <option value="20">DAIHATSU</option>
+            <option value="22">DODGE</option>
+            <option value="147">FAW</option>
+            <option value="26">FIAT</option>
+            <option value="29">FORD</option>
+            <option value="27">FOTON</option>
+            <option value="32">GEELY</option>
+            <option value="33">GWM</option>
+            <option value="36">HONDA</option>
+            <option value="37">HYUNDAI</option>
+            <option value="39">ISUZU</option>
+            <option value="40">JAGUAR</option>
+            <option value="41">JEEP</option>
+            <option value="43">KIA</option>
+            <option value="47">LAND ROVER </option>
+            <option value="50">LEXUS</option>
+            <option value="55">MAZDA</option>
+            <option value="56">MERCEDES-BENZ</option>
+            <option value="58">MG</option>
+            <option value="60">MINI</option>
+            <option value="59">MITSUBISHI</option>
+            <option value="63">NISSAN</option>
+            <option value="65">OPEL</option>
+            <option value="66">PEUGEOT</option>
+            <option value="70">PROTON</option>
+            <option value="72">RANGE ROVER</option>
+            <option value="73">RENAULT</option>
+            <option value="80">SSANGYONG</option>
+            <option value="83">SUZUKI</option>
+            <option value="84">TATA</option>
+            <option value="85">TOYOTA</option>
+            <option value="88">VOLKSWAGEN</option>
+            <option value="89">VOLVO</option>
+            <option value="90">ZOTYE</option>
+        </select>
+        <div>&nbsp;</div>
+    
+        <!--Esto no se usa, solo es para el ejemplo-->
+        <style>
+            body{
+              margin: 0 auto;
+              width: 300px;
+              font-family: arial, helvetica, 'sans-serif';
+            }
+        </style>
+</body>
+</html>

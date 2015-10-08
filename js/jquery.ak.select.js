@@ -15,7 +15,7 @@ jQuery.fn.akselect = function(opts) {
 		var	options = select.find('option');
 		var	selected = select.find('option:selected');
 		if(selected.length > 0){
-			obj.text = selected.text();
+			obj.text = (selected.val() != "")? selected.text() : "";
 		}
 		var	custom = '<div class="ak-custom-select-cont">';
 		custom+= '<div class="ak-custom-select">';
